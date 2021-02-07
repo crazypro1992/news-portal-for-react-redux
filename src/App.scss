@@ -1,0 +1,281 @@
+@import './assests/css/variables.scss';
+@import './assests/css/stylesheets.scss';
+
+.App {
+  font-size: $mainFontSize;
+  font-weight: $mainFontWeight;
+  font-family: $mainFont;
+  color: $blackMainColor;
+  background: #fff;
+
+  margin: 0 auto;
+  padding: 0;
+  width: 1140px;
+
+  & a {
+    text-decoration: none;
+    color: $blackMainColor;
+    font-weight: $mainFontWeight;
+  }
+
+  .logo a {
+    line-height: 30px;
+    font-weight: 700;
+
+    &:hover, &:focus {
+      color: $blackMainColor;
+    }
+    
+  }
+}
+
+.header {
+  padding: 45px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+
+    & li {
+      padding: 0 17.5px;
+      list-style-type: none;
+
+      & a {
+        font-size: 18px;
+        line-height: 22px;
+
+        &:hover, &.active {
+          color: $primaryColor
+        }
+      }
+    }
+  }
+}
+
+/* Header finish*/
+
+
+// News Start
+
+.news-content {
+  
+  &__title {
+    font-size: 60px;
+    line-height: 55.8px;
+    color: $blackMainColor;
+    margin-top: 90px;
+    width: 460px;
+  }
+
+  &__news {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}
+
+.news__element {
+  width: 350px;
+  margin-top: 75px;
+  margin-right: 30px;
+
+  &-title-content {
+    height: 200px;
+  }
+
+  &-title {
+    display: block;
+    padding: 0 25px;
+    border-left: 2px solid $primaryColor;
+
+    &:hover {
+      background: $primaryColor;
+      transition: 0.5s ease;
+    }
+
+    & a {
+      line-height: 30px;
+      color: $blackMainColor;
+      transition: 0.5s ease;
+
+      &:hover {
+        color: #fff;
+        transition: 0.5s ease;
+      }
+    }
+  }
+
+  &-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 25px;
+
+    &-link {
+      font-size: 20px;
+      line-height: 24px;
+      
+    }
+
+    &-date {
+      display: flex;
+      justify-content: space-between;
+    }
+
+    &-day {
+      font-size: 30px;
+      line-height: 37px;
+      margin-right: 7px;
+    }
+
+    &-month {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+  }
+}
+
+
+// News Finish
+
+// News Detail Page Start
+
+
+.single-content {
+  margin-top: 90px;
+  display: flex;
+  justify-content: space-between;
+
+  &-info-title {
+    font-size: 60px;
+    line-height: 73px;
+    width: 350px;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+
+  &-info-content {
+    &-link {
+      line-height: 30px;
+      color: $blackMainColor;
+      margin-bottom: 30px;
+      display: block;
+    }
+
+    &-date {
+      display: flex;
+    }
+    &-day {
+      font-size: 30px;
+      line-height: 37px;
+      margin-right: 7px;
+    }
+    &-month {
+      font-size: 20px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
+    
+  }
+
+  &-content-img {
+    width: 100%;
+    margin-bottom: 60px;
+  }
+  &-content-text {
+    line-height: 35px;
+  }
+}
+
+
+// News Detail Page Finish
+
+
+// Contacts Page Start
+
+
+.contact-content {
+  display: flex;
+  justify-content: space-between;
+
+  &__img {
+    width: 540px;
+  }
+
+  &__info-phone {
+    display: block;
+    font-size: 60px;
+    color: $primaryColor!important;
+    line-height: 55.8px;
+    margin-bottom: 50px;
+  }
+
+  &__info-name {
+    width: 200px;
+    line-height: 30px;
+    padding-left: 23px;
+    margin-bottom: 30px;
+    border-left: 2px solid $primaryColor;
+  }
+
+  &__info-lin {
+    display: block;font-size: 20px;
+    line-height: 24px;
+    color: $blackMainColor;
+    margin-bottom: 52px;
+  }
+
+  &__info-position {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+    color: $blackMainColor;
+    margin-bottom: 25px;
+  }
+
+  &__info-skills {
+    font-size: 20px;
+    line-height: 24px;
+    color: $blackMainColor
+  }
+}
+
+// Contacts Page Finish
+
+/* Footer start*/
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 135px 0 45px;
+
+  &__logo p {
+    font-size: 12px;
+    line-height: 15px;
+    margin-top: 0;
+  }
+
+  &__title {
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+  }
+
+  &__description-made-by {
+    font-size: 12px;
+    line-height: 15px;
+    text-align: right;
+  }
+
+  &__description-name {
+    font-weight: bold;
+    line-height: 30px;
+    text-align: right;
+  }
+}
+
+/* Footer finish*/
